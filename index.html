@@ -13,97 +13,72 @@
 <h2> Laboratoria </h2>
  <p>Luego del proceso de Pre-Admisión tenemos más preguntas para tí.
  <p>Te deseamos mucho Éxito.</p></P>
- <form>
-   Nombre: <br>
-   <input type="text" name="nombre">
- </form>
 
 <div id= "opciones">
-  <li>
-    <a href="#" class="lista" id="1">Jugar</a>
-  </li>
-  <li>
-    <a href="#" class="lista"  id="2">No Jugar</a>
-  </li>
+    <li>
+          <a href="#" class="lista" id="1">Jugar</a>
+    </li>
+
+    <li>
+         <a href="#" class="lista"  id="2">No Jugar</a>
+   </li>
+
   <div id="divlista1" class="divlista">
-   <form>
-  <div id= 'Question1'>
-    <p>¿Cuántas egresadas tiene Laboratoria?</p>
-    <input type="radio" name="Question1" value="+600"> +600<br>
-    <input type="radio" name="Question1" value="1000"> 1000<br>
-    <input type="radio" name="Question1" value="347"> 347
+
+    <form id="preguntas">
+
+    <h2>Empecemos con las Preguntas: </h2>
+    <div id= "question1">
+      <label><b>1. ¿Cuántas egresadas tiene Laboratoria?</b></label>
+      <br>
+      <br>
+      <div id="malas">+600</div><input type="radio" value="bad1" name="pregunta1"><br>
+      <div id="buenas">100</div><input type="radio" value="good1" name="pregunta1"><br>
+      <br>
+      <br>
+    </div>
+
+    <div id= "question2">
+      <label><b>3. ¿En qué país tiene sede Laboratoria?</b></label>
+      <br>
+      <br>
+      <div id="buenas2">Chile</div><input type="radio" value="good2" name="pregunta2"><br>
+      <div id="malas2">Argentina</div><input type="radio" value="bad2" name="pregunta2"><br>
+      <br>
+      <br>
+    </div>
+
+    <div id= "question3">
+      <label><b>3. ¿Qué lenguaje de programación enseñan en Laboratoria?</b></label>
+      <br>
+      <br>
+      <div id="malas3">JavaScript</div><input type="radio" value="bad3" name="pregunta3"><br>
+      <div id="buenas3">Java</div><input type="radio" value="good3" name="pregunta3"><br>
+      <br>
+      <br>
+    </div>
+
+    <div id= "question4">
+      <label><b>4. ¿Cuál es el porcentaje de inserción laboral?.</b></label>
+      <br>
+      <br>
+      <div id="buenas4">+80%</div><input type="radio" value="good4" name="pregunta4"><br>
+      <div id="malas4">100%</div><input type="radio" value="bad4" name="pregunta4"><br>
+      <br>
+      <br>
+    </div>
+      
+      <div id="enviar">
+       <input id="button" type="button" value="enviar" onclick="check()">
+
   </div>
 
-  <div id="Question2">
-    <p>¿En qué país tiene sede Laboratoria?</p>
-    <input type="radio" name="Question2" value="Argentina"> Argentina <br>
-    <input type="radio" name="Question2" value="Chile"> Chile <br>
-    <input type="radio" name="Question" value="Colombia"> Colombia
+<div id="final">
   </div>
-
-  <div id="Qestion3">
-    <p>¿Cuál es el porcentaje de incersión de Laboratoria?</p>
-    <input type="radio" name="Question3" value="50%"> 50% <br>
-    <input type="radio" name="Question3" value="100%"> 100% <br>
-    <input type="radio" name="Question3" value="+80%"> +80%
-  </div>
-
-<div id="Qestion4">
-  <p>¿Qué lenguaje de programación enseñan en Laboratoria?</p>
-  <input type="radio" name="Question4" value="Java"> Java <br>
-  <input type="radio" name="Question4" value="Cobol"> Cobol <br>
-  <input type="radio" name="Question4" value="Javascript"> Javascript
-</div>
-
-<div id="Qestion5">
-  <p>¿Cuántas empresas empleadoras tiene Laboratoria?</p>
-  <input type="radio" name="Question5" value="1500"> 1500 <br>
-  <input type="radio" name="Question5" value="+200"> +200 <br>
-  <input type="radio" name="Question5" value="468"> 468
-</div>
-
-
-  </form>
-</div>
-
-<div id="divlista2" class="divlista">
-  <p>Lastima será para la próxima<p>
-</div>
 
 </div>
         
 
-
-
-
-   <!-- <div id="upperBar">
-        <span id="nameLabel">Nombre : </span>
-        <span id="name"></span>
-    </div>
-    <div id="scoreBoard">
-        <div id="rightAnswers">
-            <h2>Respuestas correctas</h2>
-            <div id="rightAnswersText">
-
-            </div>
-        </div>
-        <div id="wrongAnswers">
-            <h2>Respuestas incorrectas</h2>
-            <div id="wrongAnswersText">
-
-            </div>
-        </div>
-    </div>
-    <div id="warningBlock">
-        <p id="warningMessage"></p>
-    </div>
-    <script src="app.js"></script>
-
-
-function ocultar() {
-    document.getElementById('DivDelista1').style.display = "none";
-    document.getElementById('DivDelista2').style.display = "block";
-};-->
 
  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
