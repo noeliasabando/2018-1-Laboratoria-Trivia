@@ -1,3 +1,12 @@
+
+
+function ocultar() {
+    document.getElementById('DivDelista1').style.display = "none";
+    document.getElementById('DivDelista2').style.display = "block";
+};
+
+
+
 window.onload = function() {
     var name = prompt("¿cuál es tu nombre?");
     document.getElementById("name").innerText = name;
