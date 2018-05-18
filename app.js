@@ -1,17 +1,26 @@
 //Ocultamos todos los div al iniciar
 $(".divlista").hide();
 
-//Al hacer click en un elemento ocultamos todo 
+//Al hacer click en un elemento ocultamos todo
 //y mostramos el div indicado basado en el identificador del link
 $(".lista").on("click",function(){
   $(".divlista").hide();
   $("#divlista"+ $(this).attr("id")).show();
 });
 
+function check() {
+  var pregunta1= document.question1.value;
+  var pregunta2= document.question2.value;
+  var pregunta3= document.question3.value;
+  var pregunta4= document.question4.value;
+  var pregunta5= document.question5.value;
+  var respuestasCorrectas= 0;
+
+
 
 // window.onload = function() {
 //var name = prompt("¿cuál es tu nombre?");
-//    document.getElementById("name").innerText = name; 
+//    document.getElementById("name").innerText = name;
 //
 //    var wantToPlay = prompt("¿quieres jugar? s/n");
 //    if (wantToPlay.toLowerCase() == "s") {
