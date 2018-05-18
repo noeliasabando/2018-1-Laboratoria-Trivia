@@ -5,24 +5,70 @@
     <meta charset=utf-8>
     <title>Trivia</title>
     <link rel="stylesheet" href="style.css" />
+    
 </head>
 
 <body>
+
 <h2> Laboratoria </h2>
-
-<p>Esta Trivia esta realizada en base a la información que hemos aprendido en Laboratoria, durante el proceso de Pre-Admisión. 
- <p>Acontinuación, encontrarás una serie de preguntas que podras responder eligiendo una de las alternativas propuestas.</p> 
+ <p>Luego del proceso de Pre-Admisión tenemos más preguntas para tí.
  <p>Te deseamos mucho Éxito.</p></P>
+ <form>
+   Nombre: <br>
+   <input type="text" name="nombre">
+ </form>
 
 
-<li>
-  <a href="#">Jugar</a>
-</li>
-<li>
-  <a href="#" onclick="ocultar;">No Jugar</a>
-</li>
+  <li>
+    <a href="#" class="lista" id="1">Jugar</a>
+  </li>
+  <li>
+    <a href="#" class="lista"  id="2">No Jugar</a>
+  </li>
+  <div id="divlista1" class="divlista">
+   <form>
+  <div id= 'Question1'>
+    <p>¿Cuántas egresadas tiene Laboratoria?</p>
+    <input type="radio" name="Question1" value="+600"> +600<br>
+    <input type="radio" name="Question1" value="1000"> 1000<br>
+    <input type="radio" name="Question1" value="347"> 347
+  </div>
+
+  <div id="Question2">
+    <p>¿En qué país tiene sede Laboratoria?</p>
+    <input type="radio" name="Question2" value="Argentina"> Argentina <br>
+    <input type="radio" name="Question2" value="Chile"> Chile <br>
+    <input type="radio" name="Question" value="Colombia"> Colombia
+  </div>
+
+  <div id="Qestion3">
+    <p>¿Cuál es el porcentaje de incersión de Laboratoria?</p>
+    <input type="radio" name="Question3" value="50%"> 50% <br>
+    <input type="radio" name="Question3" value="100%"> 100% <br>
+    <input type="radio" name="Question3" value="+80%"> +80%
+  </div>
+
+<div id="Qestion4">
+  <p>¿Qué lenguaje de programación enseñan en Laboratoria?</p>
+  <input type="radio" name="Question4" value="Java"> Java <br>
+  <input type="radio" name="Question4" value="Cobol"> Cobol <br>
+  <input type="radio" name="Question4" value="Javascript"> Javascript
+</div>
+
+<div id="Qestion5">
+  <p>¿Cuántas empresas empleadoras tiene Laboratoria?</p>
+  <input type="radio" name="Question5" value="1500"> 1500 <br>
+  <input type="radio" name="Question5" value="+200"> +200 <br>
+  <input type="radio" name="Question5" value="468"> 468
+</div>
 
 
+  </form>
+</div>
+
+<div id="divlista2" class="divlista">
+  <p>Lastima será para la próxima<p>
+</div>
         
 
 
@@ -49,7 +95,18 @@
     <div id="warningBlock">
         <p id="warningMessage"></p>
     </div>
-    <script src="app.js"></script>-->
+    <script src="app.js"></script>
+
+
+function ocultar() {
+    document.getElementById('DivDelista1').style.display = "none";
+    document.getElementById('DivDelista2').style.display = "block";
+};-->
+
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+
 
 </body>
 
